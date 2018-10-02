@@ -1,0 +1,16 @@
+{
+  "name": "bens_boilerplate",
+  "version": "1.0.0",
+  "description": "just a bunch of code I use over and over",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Dunkle",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+     "browser-sync": "^2.8.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.5"
+  }
+}
