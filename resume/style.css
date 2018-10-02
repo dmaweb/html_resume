@@ -1,61 +1,47 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-}
+	box-sizing: border-box; }
 
 body {
 	font-family: 'Muli', sans-serif;
-	position: relative;
-}
+	position: relative; }
 
 header {
 	background: #707877;
 	color: #fff;
 	height: 140px;
-	position: relative;
-}
-
-header a {
-	color: #fff;
-}
+	position: relative; }
+	header a {
+		color: #fff; }
 
 #logo {
 	width: 80px;
 	height: auto;
 	position: absolute;
 	left: 50px;
-	top: 18px;
-}
+	top: 18px; }
 
 #contact {
 	position: absolute;
 	left: 200px;
-	top: 18px;
-}
+	top: 18px; }
 
 h1 {
-	font-size: 24px;
-}
+	font-size: 24px; }
 
-main {
+#main {
 	padding: 1rem;
 	max-width: 50em;
-	margin-bottom: 100px;
-}
-
-main ul {
-	margin: 6px 1em;
-}
-
-main section {
-	margin: 12px 0;
-}
+	margin-bottom: 100px; }
+	#main ul {
+		margin: 6px 1em; }
+	#main section {
+		margin: 12px 0; }
 
 .entry {
 	margin: 12px 0;
-	position: relative;
-}
+	position: relative; }
 
 footer {
 	color: #fff;
@@ -63,28 +49,21 @@ footer {
 	position: fixed;
 	bottom: 0;
 	padding: 1rem;
-	width: 100%;
-}
-
-footer p {
-	margin-left: 180px;
-	font-size: 12px;
-}
+	width: 100%; }
+	footer p {
+		margin-left: 180px;
+		font-size: 12px; }
 
 @media (min-width: 600px) {
-	main {
+	#main {
 		padding: 0;
 		position: absolute;
 		left: 200px;
-		top: 180px;
-	}
-
+		top: 180px; }
 	.when {
 		position: absolute;
 		left: -200px;
 		width: 200px;
 		text-align: right;
 		padding: 0 1rem;
-		font-style: italic;
-	}
-}
+		font-style: italic; } }

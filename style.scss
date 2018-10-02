@@ -43,7 +43,7 @@ h1 {
 	font-size: 24px;
 }
 
-main {
+#main {
 	padding: 1rem;
 	max-width: 50em;
 	margin-bottom: 100px;
@@ -76,7 +76,7 @@ footer {
 }
 
 @media (min-width: 600px) {
-	main {
+	#main {
 		padding: 0;
 		position: absolute;
 		left: 200px;
