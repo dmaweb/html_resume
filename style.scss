@@ -1,8 +1,10 @@
 $desktop: 1000px;
 $mobile: 800px;
 $phone: 500px;
+$accent: #007b7b;
 
-$grey: #aaa;
+/* change the link below to the Google font of your choice */
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
 
 * {
 	margin: 0;
@@ -10,101 +12,97 @@ $grey: #aaa;
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
-	font-family: 'Muli', sans-serif;
+	height: 100%;
+	font-family: 'Barlow', sans-serif;
 	position: relative;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
+}
+
+h1 {
+	font-size: 1.6rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+p, ul {
+	font-size: 1rem;
+}
+
+h2, h3, p, ul {
+	margin-top: .5em;
+}
+
+li {
+	margin-left: 1em;
 }
 
 header {
-	background: $grey;
-	color: #fff;
-	height: 140px;
 	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+
+	/* change the colors below */
+	background: $accent;
+	color: #fff;
+
+	#contact {
+		margin-left: 1rem;
+	}
+
 	a {
 		color: #fff;
 	}
 }
 
 #logo {
-	width: 80px;
-	height: auto;
-	position: absolute;
-	left: 50px;
-	top: 18px;
+	/* Adjust the sizes below so your logo fits in the header */
+	width: auto;
+	height: 120px;
+
+	img {
+		height: 120px;
+	}
 }
 
-#contact {
-	position: absolute;
-	left: 200px;
-	top: 18px;
-}
-
-h1 {
-	font-size: 24px;
-}
-
-#main {
+main {
 	padding: 1rem;
-	max-width: 50em;
-	margin-bottom: 100px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: 1rem;
 
-	ul {
-		margin: 6px 1em;
+	section:not(:first-child), article:not(:first-of-type) {
+		margin-top: 1rem;
+
+		/* adjust properties below to change the look of the seperator bars */
+		border-top: 1px dotted #000;
 	}
 
-	section {
-		margin: 12px 0;
+	h1, h2, h3, a {
+		color: #007b7b;
 	}
-}
-
-.entry {
-	margin: 12px 0;
-	position: relative;
 }
 
 footer {
-	color: #fff;
-	background: $grey;
-	position: fixed;
-	bottom: 0;
 	padding: 1rem;
 	width: 100%;
+	color: #fff;
+	background: $accent;
+
 	p {
-		margin-left: 180px;
-		font-size: 12px;
-	}
-}
-
-.grid {
-	display:grid;
-
-}
-
-.col2 {
-	grid-template-columns:auto auto;
-	grid-gap: 1rem;
-}
-@media (min-width: 600px) {
-	#main {
-		padding: 0;
-		position: absolute;
-		left: 200px;
-		top: 180px;
-	}
-
-	.when {
-		position: absolute;
-		left: -200px;
-		width: 200px;
-		text-align: right;
-		padding: 0 1rem;
-		font-style: italic;
-	}
-}
-
-@media (max-width: 600px) {
-	.responsive {
-			grid-template-columns:auto;
-
+		text-align: center;
 	}
 }

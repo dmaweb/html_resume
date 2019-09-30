@@ -18,7 +18,7 @@ gulp.task('serve', function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
 	return gulp.src("*.scss")
-		.pipe(sass({indentType: 'tab', indentWidth: 1 }).on('error', sass.logError))
+		.pipe(sass({indentType: 'tab', indentWidth: 1, outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(gulp.dest("resume"))
 		.pipe(browserSync.stream());
 });
